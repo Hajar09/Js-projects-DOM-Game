@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+}
+
+#all {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(235, 103, 103);
+}
+
+#playerOne {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 500px;
+}
+
+#playerTwo {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 500px;
+
+}
+
+#scoreRound-one {
+background-color: rgb(235, 103, 103) ;
+width: 100px;
+height: 100px;
+margin: 200px 0 0 150px;
+text-align: center;
+}
+
+#scoreRound-two  {
+    background-color: rgb(235, 103, 103);
+    width: 100px;
+    height: 100px;
+    margin: 200px 0 0 150px;
+    text-align: center;
+}
+
+#current-score-one {
+    font-size: 30px;
+}
+
+#current-score-two {
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(235, 103, 103);
+    position: relative;
+}
+
+h2 span {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 100px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(235, 103, 103);
+}
+
+h2 #pl2 {
+    display: none;
+}
+
+#global1 {
+    border: ;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 150px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(235, 103, 103);
+}
+
+#global2 {
+    border: ;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 150px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(235, 103, 103);
+}
+
+#diceImg {
+    display: flex;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#diceImg {
+    margin: 70px 0 0 0; 
+}
+
+#text-result-game {
+    border: ;
+    width: 200px;
+    height: 70px;
+    margin: 100px 0 0 0;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(235, 103, 103);
+}
+
+#btn-roll-hold {
+    margin: 100px 0 0 0; 
+    text-align:  center;
+}
+
+#btn-new-game {
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.fa {
+    color: #EB6767;
+}

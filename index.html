@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Die Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dice.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1 id="newGame">Dice Game</h1>
+
+    <div id="all">
+
+        <div id="playerOne">
+            <h2>PLAYER 1<span id="pl1"></span></h2>
+            <div id="global1">0</div>
+            <div id="scoreRound-one">
+                <h3>Current</h3>
+                <p id="current-score-one">0</p>
+            </div>
+        </div>
+
+        <div id="dice">
+            <div id="btn-new-game">
+                <button id="new-game-btn"><i class="fa fa-plus-circle"></i>  New Game</button>
+            </div>
+            <div id="diceImg">
+                <img  id="dice-one" src="./images/heart.jpg"/>
+                <img  id="dice-two" src="./images/heart.jpg"/>
+            </div>
+            <div id="btn-roll-hold">
+                <button id="rollDice-btn"><i class="fa fa-circle-notch pink"></i>Roll Dice </button>
+                <button id="hold-btn"><i class="fa fa-caret-square-down pink"></i>Hold</button> 
+            </div>
+            <div id="text-result-game"></div>
+        </div>
+
+        <div id="playerTwo">
+            <h2>PLAYER 2<span id="pl2"></span></h2>
+            <div id="global2">0</div>
+            <div id="scoreRound-two">
+                <h3>Current</h3>
+                <p id="current-score-two">0</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="dice.js"></script>
+</body>
+</html>
