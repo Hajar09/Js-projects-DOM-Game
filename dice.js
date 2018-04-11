@@ -67,10 +67,12 @@ hold_btn.onclick = function() { // il va stocker ce qui est dans current dans gl
             player1 = false;
             document.getElementById('pl1').style.display = "none";//le bouton rouge passe du player1 au player2
             document.getElementById('pl2').style.display = "block";
+            current_score_one.innerHTML = 0;//le current score du player1 retourne à 0 s'il passe la main au player2
             global1.innerHTML = holdsum1; //et le global du player1 est égale à holdsum1
         }
         else {
             global1.innerHTML = holdsum1;
+            current_score_one.innerHTML = 0; //le current score du player1 retourne à 0 s'il gagne
             txt_result_game.innerHTML = "You win ;)" //sinon le player1 gagne
         }
     }
@@ -80,12 +82,14 @@ hold_btn.onclick = function() { // il va stocker ce qui est dans current dans gl
         if(holdsum2 < 100) { //si le holdsum2 du player2 est inférieur à 100
             player2 = false; //on passe la main au player1
             player1 = true;
+            current_score_two.innerHTML = 0;//le current score du player2 retourne à 0 s'il passe la main au player1
             document.getElementById('pl2').style.display = "none";//le bouton rouge passe du player2 au player1
             document.getElementById('pl1').style.display = "block";
             global2.innerHTML = holdsum2; //et le global du player2 est égale à holdsum2
         }
         else {
             global2.innerHTML = holdsum2;
+            current_score_two.innerHTML = 0;//le current score du player2 retourne à 0 s'il gagne
             txt_result_game.innerHTML = "You win :D" // sinon le player2 gagne 
         }
     }
